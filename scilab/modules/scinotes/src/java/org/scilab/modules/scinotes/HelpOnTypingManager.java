@@ -210,7 +210,7 @@ public final class HelpOnTypingManager implements KeyListener {
 
                     doc.insertString(pos, str, null);
                     e.consume();
-                    textPane.setCaretPosition(pos + 1);
+                    //textPane.setCaretPosition(pos + 1); //TODO : Add a preference to toggle this
                 } catch (BadLocationException exc) {
                     System.err.println(exc);
                 }
